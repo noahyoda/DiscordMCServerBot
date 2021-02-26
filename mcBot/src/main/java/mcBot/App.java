@@ -20,7 +20,7 @@ public class App {
 	 */
 	public static void main(String[] args) {
 		
-		final String token = "ODE0NzEzMDg1MjYwNTk1MjMw.YDh2sA.uBud69rcPIM3J-n4SZhyXuPE7TM";
+		final String token = "";
 		final DiscordClient cli = DiscordClient.create(token);
 		final GatewayDiscordClient gateway = cli.login().block();
 		
