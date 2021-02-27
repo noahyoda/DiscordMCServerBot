@@ -30,8 +30,8 @@ public class WebTrigger {
 		String url = "https://aternos.org/server/";
 		String login = "https://aternos.org/go/";
 		
-		String userName = "document.getElementById('user').value = 'brainstriike'";
-		String pass = "document.getElementById('password').value = '56E5NupEwKm4P34'";
+		String userName = "document.getElementById('user').value = 'user'";
+		String pass = "document.getElementById('password').value = 'pass'";
 		String loginClick = "document.getElementById('login').click()";
 		String startServer = "document.getElementById('start').click()";
 		

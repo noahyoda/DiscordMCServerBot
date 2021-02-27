@@ -33,8 +33,8 @@ public class PostTest {
 		con.setRequestProperty("Accept", "application/json");
 		con.setDoOutput(true);
 		
-		String username = "document.getElementById('user').value = 'brainstriike'";
-		String password = "document.getElementById('password').value = '56E5NupEwKm4P34'";
+		String username = "document.getElementById('user').value = 'user'";
+		String password = "document.getElementById('password').value = 'pass'";
 		String log = "document.getElementById('login').click()";
 		
 		byte[] user = username.getBytes("utf-8");
@@ -70,21 +70,5 @@ public class PostTest {
 		}
 		return "failed somewhere";
 	}
-	
-	public void notWorking() {
-		//client = HttpClient.newHttpClient();
-		String login = "document.getElementById('user').value = 'brainstriike'";
-		String pass ="document.getElementById('password').value = '56E5NupEwKm4P34'";
-		String loginClick = "document.getElementById('login').click()";
-		String toServer = "";
-		String StartServer = "";
-		
-		
-		HttpRequest request = (HttpRequest) HttpRequest.newBuilder(
-				URI.create("https://aternos.org/go/")).POST(HttpRequest.BodyPublishers.ofString(login));
-		
-		//HttpResponse<Object> response = client.send(request, null);
-	}
-	
 	
 }
